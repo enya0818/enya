@@ -7,8 +7,10 @@
 <script>
 	const urlParams = new URLSearchParams(window.location.search);
 	const image_name = urlParams.get("img");
-	console.log(image_name);
-	document.getElementById('image').src = image_name;
+	if(image_name){
+		console.log(image_name);
+		document.getElementById('image').src = image_name;
+	}
 </script>
 <style>
 	html, body {
