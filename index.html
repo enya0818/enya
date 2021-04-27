@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="display: flex; align-items: center;">
+	<img src="monster222.png" id="image" width="100%">
+</body>
+</html>
+<script>
+	const urlParams = new URLSearchParams(window.location.search);
+	const image_name = urlParams.get("img");
+	console.log(image_name);
+	document.getElementById('image').src = image_name;
+</script>
+<style>
+	html, body {
+		height:100%;
+		margin: 0;
+		background-color: black;
+	}
+</style>
